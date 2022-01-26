@@ -1,10 +1,10 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, useContext } from "react";
 import Modal from "react-modal";
-import { api } from "../../services/api";
 import CloseImg from "../../assets/close.svg";
 import IncomeImg from "../../assets/income.svg";
 import OutcomeImg from "../../assets/outcome.svg";
 import * as S from "./styles";
+import { TransactionsContext } from "../../TransactionsContext";
 
 interface NewTransactionModalProps {
   isOpen: boolean;
@@ -15,17 +15,32 @@ export const NewTransactionModal = ({
   isOpen,
   onRequestClose,
 }: NewTransactionModalProps) => {
+  const { createTransaction } = useContext(TransactionsContext);
+
   const [title, setTitle] = useState("");
-  const [value, setValue] = useState(Number());
+  const [amount, setAmount] = useState(Number());
   const [category, setCategory] = useState("");
   const [type, setType] = useState("");
 
-  function handleCreateNewTransaction(event: FormEvent) {
+  function resetStateValues() {
+    setTitle("");
+    setAmount(0);
+    setCategory("");
+    setType("");
+  }
+
+  async function handleCreateNewTransaction(event: FormEvent) {
     event.preventDefault();
 
-    const data = { title, value, category, type };
+    await createTransaction({
+      title,
+      amount,
+      category,
+      type,
+    });
 
-    api.post("transactions", data);
+    resetStateValues();
+    onRequestClose();
   }
 
   return (
@@ -49,8 +64,8 @@ export const NewTransactionModal = ({
         <input
           type="number"
           placeholder="Valor"
-          value={value}
-          onChange={(event) => setValue(Number(event.target.value))}
+          value={amount}
+          onChange={(event) => setAmount(Number(event.target.value))}
         />
 
         <S.TransactionTypeContainer>

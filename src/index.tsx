@@ -13,17 +13,17 @@ createServer({
       transactions: [
         {
           id: 1,
-          title: "Cheirar Pó",
+          title: "Modelo de Retirada",
           type: "withdraw",
-          category: "Vícios",
+          category: "Despesas",
           amount: 100,
           createdAt: new Date("2021-11-17 08:00:00"),
         },
         {
           id: 2,
-          title: "Pagamento de Agiotagem",
+          title: "Modelo de Depositos",
           type: "deposit",
-          category: "Dev",
+          category: "Depositos",
           amount: 2500,
           createdAt: new Date("2021-11-17 09:00:00"),
         },
