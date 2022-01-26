@@ -16,7 +16,7 @@ createServer({
           title: "Modelo de Retirada",
           type: "withdraw",
           category: "Despesas",
-          amount: 100,
+          amount: 0.01,
           createdAt: new Date("2021-11-17 08:00:00"),
         },
         {
@@ -24,8 +24,8 @@ createServer({
           title: "Modelo de Depositos",
           type: "deposit",
           category: "Depositos",
-          amount: 2500,
-          createdAt: new Date("2021-11-17 09:00:00"),
+          amount: 0.01,
+          createdAt: new Date("2021-11-17 00:00:00"),
         },
       ],
     });
