@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/arturmoney/static/js/main.6c03797e.js",
-    "static/media/logo.svg": "/arturmoney/static/media/logo.614d71d1db9fdf3ca2355f05ed3b0142.svg",
-    "static/media/total.svg": "/arturmoney/static/media/total.e90c2d1e4d0cdd036cc577afd9f496eb.svg",
-    "static/media/outcome.svg": "/arturmoney/static/media/outcome.6eb96d3079777422e5bd5deaa688a46e.svg",
-    "static/media/income.svg": "/arturmoney/static/media/income.d58effe2f7ca5d17f64c8350e5fa2fe2.svg",
-    "index.html": "/arturmoney/index.html",
-    "static/media/close.svg": "/arturmoney/static/media/close.f62862c6571367515ce17c7b4e77a1fc.svg",
-    "main.6c03797e.js.map": "/arturmoney/static/js/main.6c03797e.js.map"
+    "main.js": "/reactjs_arturmoney/static/js/main.a5dd6049.js",
+    "static/media/logo.svg": "/reactjs_arturmoney/static/media/logo.614d71d1db9fdf3ca2355f05ed3b0142.svg",
+    "static/media/total.svg": "/reactjs_arturmoney/static/media/total.e90c2d1e4d0cdd036cc577afd9f496eb.svg",
+    "static/media/outcome.svg": "/reactjs_arturmoney/static/media/outcome.6eb96d3079777422e5bd5deaa688a46e.svg",
+    "static/media/income.svg": "/reactjs_arturmoney/static/media/income.d58effe2f7ca5d17f64c8350e5fa2fe2.svg",
+    "index.html": "/reactjs_arturmoney/index.html",
+    "static/media/close.svg": "/reactjs_arturmoney/static/media/close.f62862c6571367515ce17c7b4e77a1fc.svg",
+    "main.a5dd6049.js.map": "/reactjs_arturmoney/static/js/main.a5dd6049.js.map"
   },
   "entrypoints": [
-    "static/js/main.6c03797e.js"
+    "static/js/main.a5dd6049.js"
   ]
 }
