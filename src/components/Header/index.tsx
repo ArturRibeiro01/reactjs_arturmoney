@@ -11,7 +11,7 @@ export const Header = ({ onOpenNewTransactionModal }: HeaderProps) => {
       <S.Content>
         <img src={logoImg} alt="dt-mony" />
         <button onClick={onOpenNewTransactionModal} type="button">
-          Nova transação
+          Criar Transação
         </button>
       </S.Content>
     </S.Container>

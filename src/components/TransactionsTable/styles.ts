@@ -36,3 +36,8 @@ export const Container = styled.div`
     }
   }
 `;
+
+export const VoidTableMessage = styled.h3`
+  text-align: center;
+  color: var(--text-body);
+`;
