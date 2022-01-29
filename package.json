@@ -2,7 +2,6 @@
   "name": "arturmoney",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ArturRibeiro01.github.io/arturmoney",
   "dependencies": {
     "axios": "^0.24.0",
     "miragejs": "^0.1.43",
