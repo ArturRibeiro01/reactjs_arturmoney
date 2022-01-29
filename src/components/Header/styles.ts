@@ -26,4 +26,20 @@ export const Content = styled.header`
       filter: brightness(0.9);
     }
   }
+
+  @media (max-width: 400px) {
+    display: inline-block;
+    width: 100%;
+
+    img {
+      display: inline-block;
+      justify-content: center;
+    }
+    button {
+      display: inline-block;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+  }
 `;

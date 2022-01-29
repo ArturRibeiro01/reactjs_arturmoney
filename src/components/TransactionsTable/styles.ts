@@ -37,7 +37,13 @@ export const Container = styled.div`
   }
 `;
 
-export const VoidTableMessage = styled.h3`
+export const VoidTableMessage = styled.h2`
   text-align: center;
+  font-weight: 400;
   color: var(--text-body);
+  margin-top: 10rem;
+
+  @media (max-width: 576px) {
+    margin-top: 5rem;
+  }
 `;
